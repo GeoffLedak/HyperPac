@@ -33,5 +33,4 @@ public:
 	enum GameState { TITLE_SCREEN, STARTING_ROUND, PLAY, PAUSE };
 	GameState gameState;
 
-
 };
