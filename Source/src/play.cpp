@@ -5,13 +5,13 @@ using namespace std;
 
 void Main::play() {
 
-	readKeys();
+	p_readKeys();
 	updateSprites();
 
 }
 
 
-void Main::readKeys() {
+void Main::p_readKeys() {
 
 	//TURN RIGHT    
 	if ( agk::GetRawKeyState( 39 ) )
@@ -36,8 +36,6 @@ void Main::readKeys() {
 void Main::updateSprites() {
 
 	updatePlayerOne();
-
-
 
 	agk::SetSpritePosition( playerOne.sprite, playerOne.x, playerOne.y );
 

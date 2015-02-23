@@ -9,28 +9,33 @@ class Main {
 
 public:
 
+	// TIMING
 	unsigned short MASTER_CLOCK;
 	bool timerRemaining;
 	bool stateDuration(short time);
-	void readKeys();
+
+	// DRAWING & MOVEMENT
 	void updateSprites();
 	void updatePlayerOne();
 	void setDirectionPlayerOne( Direction );
 
+	// MASTER STATES
 	void begin();
 	void loop();
 	void end();
 
 	// GAME STATES
 	void titleScreen();
+		void showTitleScreen();
+		const char* getCredits();
+		const char* getInstructions();
+
 	void startingRound();
+
 	void play();
+		void p_readKeys();
 
-
-	void showTitleScreen();
-	const char* getCredits();
-	const char* getInstructions();
-
+	// STUFF
 	string credits;
 	string instructions;
 
