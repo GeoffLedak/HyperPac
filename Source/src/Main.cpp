@@ -8,6 +8,10 @@ void Main::begin() {
 	agk::SetSyncRate(60, 0);
 	agk::SetScissor(0, 0, 0, 0);
 
+	gameState = TITLE_SCREEN;
+
+	titleScreen.initialize();
+
 	playerOne.initialize();
 	playerOne.reset();
 
@@ -15,6 +19,31 @@ void Main::begin() {
 
 
 void Main::loop() {
+
+	switch (gameState) {
+
+		case TITLE_SCREEN:
+			agk::Print("TITLE SCREEN");
+			titleScreen.showTitleScreen();
+
+			break;
+
+		case STARTING_ROUND:
+			agk::Print("STARTING ROUND");
+			break;
+
+		case PLAY:
+			agk::Print("PLAY");
+			break;
+
+		case PAUSE:
+			agk::Print("PAUSE");
+			break;
+
+		default:
+			agk::Print("Error, not a valid game state");
+
+	}
 
 }
 

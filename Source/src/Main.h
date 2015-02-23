@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "template.h"
+#include "TitleScreen.h"
 
 
 class Main {
@@ -12,5 +13,9 @@ public:
 	Player playerOne;
 	Player playerTwo;
 
+	enum GameState { TITLE_SCREEN, STARTING_ROUND, PLAY, PAUSE };
+	GameState gameState;
+
+	TitleScreen titleScreen;
 
 };

@@ -15,12 +15,14 @@
     <ClCompile Include="Source\src\Main.cpp" />
     <ClCompile Include="Source\src\Player.cpp" />
     <ClCompile Include="Source\src\template.cpp" />
+    <ClCompile Include="Source\src\TitleScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\src\Main.h" />
     <ClInclude Include="Source\src\Player.h" />
     <ClInclude Include="Source\src\resource.h" />
     <ClInclude Include="Source\src\template.h" />
+    <ClInclude Include="Source\src\TitleScreen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{147BF424-49C6-4C6D-A6F1-A38D1A0850DA}</ProjectGuid>
