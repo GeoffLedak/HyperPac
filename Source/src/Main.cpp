@@ -42,7 +42,9 @@ void Main::loop() {
 			break;
 
 		case PLAY:
-			agk::Print("PLAY");
+			agk::Print(playerOne.x);
+			agk::Print(playerOne.y);
+			play();
 			break;
 
 		case PAUSE:

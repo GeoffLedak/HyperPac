@@ -5,7 +5,7 @@ void Main::startingRound() {
 
 	agk::Print("STARTING DA ROUND YO");
 
-	if ( stateDuration(180) == true )
+	if ( stateDuration(180) )
 		gameState = PLAY;
 
 }

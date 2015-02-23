@@ -10,6 +10,8 @@
 #define DEVICE_POS_Y 32
 #define FULLSCREEN false
 
+enum Direction { d_up, d_down, d_left, d_right, d_idle };
+
 // Global values for the app
 class App
 {
@@ -22,6 +24,8 @@ class App
 		void begin( void );
 		void loop( void );
 		void end( void );
+
+
 };
 
 extern App app;

@@ -8,6 +8,8 @@ void Player::initialize() {
 	agk::SetSpriteAnimation(sprite, 16, 16, 4);
 	agk::PlaySprite(sprite, 22);
 
+	direction = d_right;
+
 }
 
 

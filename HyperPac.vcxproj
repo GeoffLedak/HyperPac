@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="Source\src\Core.cpp" />
     <ClCompile Include="Source\src\Main.cpp" />
+    <ClCompile Include="Source\src\play.cpp" />
     <ClCompile Include="Source\src\Player.cpp" />
     <ClCompile Include="Source\src\startingRound.cpp" />
     <ClCompile Include="Source\src\template.cpp" />

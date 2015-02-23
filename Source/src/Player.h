@@ -1,3 +1,5 @@
+#include "template.h"
+
 class Player {
 
 public:
@@ -5,6 +7,8 @@ public:
 	void reset();
 
 	unsigned int sprite;
+
+	Direction direction;
 
 	short x;
 	short y;
