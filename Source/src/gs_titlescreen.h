@@ -11,6 +11,7 @@ const char* Title_GetCredits();
 const char* Title_GetInstructions();
 
 extern string credits;
+extern string version;
 extern string instructions;
 
 #endif

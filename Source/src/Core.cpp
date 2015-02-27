@@ -15,12 +15,12 @@
 #include "direct.h"
 
 // App specific include for Core (so core can be distributed between apps without editing inside it)
-#include "template.h"
+#include "main.h"
 #include "resource.h"
 
 #include <string>
 
-#include "main.h"
+
 
 #define WM_SOUND_EVENT 0x8001
 #define WM_VIDEO_EVENT 0x8002
@@ -36,12 +36,7 @@ HANDLE hDebugConsoleOut = NULL;
 HWND g_hWnd = NULL;
 
 
-unsigned short MASTER_CLOCK;
-bool timerRemaining;
-GameState gameState;
-string credits;
-string instructions;
-player_t playerOne;
+
 
 
 //
@@ -727,7 +722,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		// initialise graphics API (win32 openGL) for app
 		agk::InitGL((void*)hWnd);
 
-		app.begin();
+		main.begin();
 //		M_Begin();
 	}
 	catch (...)
@@ -753,7 +748,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 			// call app each frame
 			try
 			{
-				if (!agk::IsCapturingImage()) app.loop();
+				if (!agk::IsCapturingImage()) main.loop();
 		//		if (!agk::IsCapturingImage()) M_Loop();
 			}
 			catch (...)
@@ -767,7 +762,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	}
 
 	// call app end
-	app.end();
+	main.end();
 //	M_End();
 
 	agk::CleanUp();

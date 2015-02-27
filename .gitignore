@@ -3,3 +3,6 @@ Release/HyperPac.exe
 Release/HyperPac.pdb
 *.opensdf
 *.sdf
+*.obj
+*.log
+*.tlog

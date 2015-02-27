@@ -1,7 +1,7 @@
 #ifndef __GS_PLAY__
 #define __GS_PLAY__
 
-#include "template.h"
+#include "main.h"
 #include "o_player.h"
 
 

@@ -12,7 +12,6 @@ void GS_Play() {
 
 
 void Play_ReadKeys() {
-	agk::Print("Read da keys");
 	//TURN RIGHT    
 	if ( agk::GetRawKeyState( 39 ) )
 		Play_SetDirection( playerOne, d_right );

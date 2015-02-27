@@ -4,13 +4,7 @@
     <ClCompile Include="Source\src\Core.cpp">
       <Filter>agk</Filter>
     </ClCompile>
-    <ClCompile Include="Source\src\template.cpp">
-      <Filter>agk</Filter>
-    </ClCompile>
     <ClCompile Include="Source\src\gs_play.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="Source\src\o_player.cpp">
@@ -25,16 +19,19 @@
     <ClCompile Include="Source\src\i_timing.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="Source\src\i_gamestate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\s_functions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\src\resource.h">
       <Filter>agk</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\src\template.h">
-      <Filter>agk</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\src\main.h">
-      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="Source\src\o_player.h">
       <Filter>src</Filter>
@@ -52,6 +49,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="Source\src\gs_startinground.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\s_functions.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

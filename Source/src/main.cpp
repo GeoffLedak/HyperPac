@@ -1,9 +1,11 @@
-#include "template.h"
 #include "main.h"
 
+using namespace std;
+Main main;
 
-void M_Begin() {
 
+void Main::begin(void) 
+{
 	MASTER_CLOCK = 0;
 	timerRemaining = false;
 
@@ -17,58 +19,48 @@ void M_Begin() {
 	PlayerInitialize(playerOne);
 	PlayerReset(playerOne);
 
-	credits = "";
-	credits = credits + "HyperPac version " + "VERSION";
-	instructions = "Press Space Bar to begin";
 
 }
 
 
-void M_Loop() {
-
-	agk::Print(MASTER_CLOCK);
-
+void Main::loop(void)
+{
 	switch (gameState) {
 
-	case TITLE_SCREEN:
-		agk::Print("TITLE SCREEN");
-		GS_TitleScreen();
+		case TITLE_SCREEN:
+			GS_TitleScreen();
 
-		// If user presses the Space Bar, start the round
-		if (agk::GetButtonPressed(1) == 1) {
-			gameState = STARTING_ROUND;
+			// If user presses the Space Bar, start the round
+			if (agk::GetButtonPressed(1) == 1) {
+				gameState = STARTING_ROUND;
+			}
+			break;
+
+		case STARTING_ROUND:
+			GS_StartingRound();
+			break;
+
+		case PLAY:
+			agk::PrintC("playerOne x: "); agk::Print(playerOne.x);
+			agk::PrintC("playerOne y: "); agk::Print(playerOne.y);
+			GS_Play();
+			break;
+
+		case PAUSE:
+			agk::Print("PAUSE");
+			break;
+
+		default:
+			agk::Print("Error, not a valid game state");
 		}
-		break;
 
-	case STARTING_ROUND:
-		agk::Print("player.x:");
-		agk::Print(playerOne.x);
-		agk::Print("STARTING ROUND");
-		GS_StartingRound();
-		break;
 
-	case PLAY:
-		agk::Print("PLAY");
-		agk::Print(playerOne.x);
-		agk::Print(playerOne.y);
-		GS_Play();
-		break;
-
-	case PAUSE:
-		agk::Print("PAUSE");
-		agk::Print("PAUSE");
-		break;
-
-	default:
-		agk::Print("Error, not a valid game state");
-	}
-
+	agk::Sync();
 }
 
 
-void M_End() {
-
+void Main::end(void)
+{
 
 }
-
 

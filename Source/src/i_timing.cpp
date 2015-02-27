@@ -1,5 +1,8 @@
 #include "i_timing.h"
+#include "main.h"
 
+unsigned short MASTER_CLOCK;
+bool timerRemaining;
 
 bool StateDuration(short time) {
 
@@ -19,3 +22,6 @@ bool StateDuration(short time) {
 	else
 		return false;
 }
+
+
+
