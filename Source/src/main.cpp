@@ -31,6 +31,7 @@ void M_Loop() {
 	switch (gameState) {
 
 	case TITLE_SCREEN:
+		agk::Print("TITLE SCREEN");
 		GS_TitleScreen();
 
 		// If user presses the Space Bar, start the round
@@ -40,16 +41,21 @@ void M_Loop() {
 		break;
 
 	case STARTING_ROUND:
+		agk::Print("player.x:");
+		agk::Print(playerOne.x);
+		agk::Print("STARTING ROUND");
 		GS_StartingRound();
 		break;
 
 	case PLAY:
+		agk::Print("PLAY");
 		agk::Print(playerOne.x);
 		agk::Print(playerOne.y);
 		GS_Play();
 		break;
 
 	case PAUSE:
+		agk::Print("PAUSE");
 		agk::Print("PAUSE");
 		break;
 

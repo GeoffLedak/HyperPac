@@ -75,7 +75,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Steam\SteamApps\common\App Game Kit 2\Tier 2\common\include;C:\Program Files %28x86%29\Steam\SteamApps\common\App Game Kit 2\Tier 2\common;..\..\common\Include;..\..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\git-repos\HyperPac\Source\src;C:\Program Files %28x86%29\Steam\SteamApps\common\App Game Kit 2\Tier 2\common\include;C:\Program Files %28x86%29\Steam\SteamApps\common\App Game Kit 2\Tier 2\common;..\..\common\Include;..\..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IDE_VS2008;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>

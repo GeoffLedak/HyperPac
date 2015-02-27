@@ -12,7 +12,7 @@ void GS_Play() {
 
 
 void Play_ReadKeys() {
-
+	agk::Print("Read da keys");
 	//TURN RIGHT    
 	if ( agk::GetRawKeyState( 39 ) )
 		Play_SetDirection( playerOne, d_right );
@@ -38,7 +38,7 @@ void Play_UpdateSprites() {
 }
 
 
-void Play_MovePlayer(player_t player) {
+void Play_MovePlayer(player_t &player) {
 
 	if (player.direction == d_right)
 		player.x++;
@@ -56,7 +56,7 @@ void Play_MovePlayer(player_t player) {
 }
 
 
-void Play_SetDirection( player_t player, Direction d_direction ) {
+void Play_SetDirection( player_t &player, Direction d_direction ) {
 
 	player.direction = d_direction;
 

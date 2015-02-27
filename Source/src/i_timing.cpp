@@ -1,7 +1,7 @@
 #include "i_timing.h"
 
 
-bool m_stateDuration(short time) {
+bool StateDuration(short time) {
 
 	if (timerRemaining == false && MASTER_CLOCK <= 0)
 		timerRemaining = true;

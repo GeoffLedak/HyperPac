@@ -20,6 +20,8 @@
 
 #include <string>
 
+#include "main.h"
+
 #define WM_SOUND_EVENT 0x8001
 #define WM_VIDEO_EVENT 0x8002
 
@@ -32,6 +34,15 @@ using namespace std;
 // Globals for core
 HANDLE hDebugConsoleOut = NULL;
 HWND g_hWnd = NULL;
+
+
+unsigned short MASTER_CLOCK;
+bool timerRemaining;
+GameState gameState;
+string credits;
+string instructions;
+player_t playerOne;
+
 
 //
 // Windows Application STUB requires entry function, create window and message pump
@@ -717,6 +728,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		agk::InitGL((void*)hWnd);
 
 		app.begin();
+//		M_Begin();
 	}
 	catch (...)
 	{
@@ -742,6 +754,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 			try
 			{
 				if (!agk::IsCapturingImage()) app.loop();
+		//		if (!agk::IsCapturingImage()) M_Loop();
 			}
 			catch (...)
 			{
@@ -755,6 +768,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
 	// call app end
 	app.end();
+//	M_End();
 
 	agk::CleanUp();
 

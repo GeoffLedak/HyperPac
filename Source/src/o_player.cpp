@@ -2,7 +2,7 @@
 #include "o_player.h"
 
 
-void PlayerInitialize(player_t player) {
+void PlayerInitialize(player_t& player) {
 
 	player.sprite = agk::LoadSprite( "Graphics/player_frames.png" );
 	agk::SetSpriteAnimation(player.sprite, 16, 16, 4);
@@ -13,7 +13,7 @@ void PlayerInitialize(player_t player) {
 }
 
 
-void PlayerReset(player_t player) {
+void PlayerReset(player_t& player) {
 
 	player.x = 128;
 	player.y = 224;

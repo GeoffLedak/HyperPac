@@ -11,7 +11,7 @@ typedef struct {
 } player_t;
 
 extern player_t playerOne;
-void PlayerInitialize(player_t);
-void PlayerReset(player_t);
+void PlayerInitialize(player_t&);
+void PlayerReset(player_t&);
 
 #endif

@@ -4,6 +4,6 @@
 
 extern unsigned short MASTER_CLOCK;
 extern bool timerRemaining;
-bool stateDuration(short time);
+bool StateDuration(short);
 
 #endif
