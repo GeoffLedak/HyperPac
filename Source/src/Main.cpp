@@ -1,7 +1,8 @@
-#include "Main.h"
+#include "template.h"
+#include "main.h"
 
 
-void Main::begin() {
+void M_Begin() {
 
 	MASTER_CLOCK = 0;
 	timerRemaining = false;
@@ -13,8 +14,8 @@ void Main::begin() {
 
 	gameState = TITLE_SCREEN;
 
-	playerOne.initialize();
-	playerOne.reset();
+	PlayerInitialize(playerOne);
+	PlayerReset(playerOne);
 
 	credits = "";
 	credits = credits + "HyperPac version " + "VERSION";
@@ -23,61 +24,45 @@ void Main::begin() {
 }
 
 
-void Main::loop() {
-	agk::Print( MASTER_CLOCK );
+void M_Loop() {
 
-	switch ( gameState ) {
+	agk::Print(MASTER_CLOCK);
 
-		case TITLE_SCREEN:
-			showTitleScreen();
+	switch (gameState) {
 
-			// If user presses the Space Bar, start the round
-			if (agk::GetButtonPressed(1) == 1) {
-				gameState = STARTING_ROUND;		
-			}
-			break;
+	case TITLE_SCREEN:
+		GS_TitleScreen();
 
-		case STARTING_ROUND:
-			startingRound();
-			break;
+		// If user presses the Space Bar, start the round
+		if (agk::GetButtonPressed(1) == 1) {
+			gameState = STARTING_ROUND;
+		}
+		break;
 
-		case PLAY:
-			agk::Print(playerOne.x);
-			agk::Print(playerOne.y);
-			play();
-			break;
+	case STARTING_ROUND:
+		GS_StartingRound();
+		break;
 
-		case PAUSE:
-			agk::Print("PAUSE");
-			break;
+	case PLAY:
+		agk::Print(playerOne.x);
+		agk::Print(playerOne.y);
+		GS_Play();
+		break;
 
-		default:
-			agk::Print("Error, not a valid game state");
+	case PAUSE:
+		agk::Print("PAUSE");
+		break;
+
+	default:
+		agk::Print("Error, not a valid game state");
 	}
 
 }
 
 
-void Main::end() {
+void M_End() {
+
 
 }
 
 
-bool Main::stateDuration(short time) {
-
-	if ( timerRemaining == false && MASTER_CLOCK <= 0 )
-			timerRemaining = true;
-
-	if (timerRemaining == true)
-		MASTER_CLOCK++;
-
-	if (MASTER_CLOCK > time) {
-		MASTER_CLOCK = 0;
-		timerRemaining = false;
-	}
-
-	if (timerRemaining == false)
-		return true;
-	else
-		return false;
-}

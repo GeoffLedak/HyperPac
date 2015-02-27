@@ -1,25 +1,27 @@
 // Includes
-#include "Main.h"
+#include "template.h"
+#include "main.h"
 
 // Namespace
 using namespace std;
 
 App app;
-Main main;
+
 
 void App::begin(void)
 {
-	main.begin();
+	M_Begin();
 }
 
 void App::loop (void)
 {
-	main.loop();
+	M_Loop();
 	agk::Sync();
 }
 
 
 void App::end (void)
 {
-	main.end();
+	M_End();
 }
+

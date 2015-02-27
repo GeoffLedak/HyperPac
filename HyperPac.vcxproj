@@ -12,16 +12,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\src\Core.cpp" />
-    <ClCompile Include="Source\src\Main.cpp" />
-    <ClCompile Include="Source\src\m_play.cpp" />
-    <ClCompile Include="Source\src\Player.cpp" />
-    <ClCompile Include="Source\src\m_startingRound.cpp" />
+    <ClCompile Include="Source\src\i_timing.cpp" />
+    <ClCompile Include="Source\src\main.cpp" />
+    <ClCompile Include="Source\src\gs_play.cpp" />
+    <ClCompile Include="Source\src\o_player.cpp" />
+    <ClCompile Include="Source\src\gs_startinground.cpp" />
     <ClCompile Include="Source\src\template.cpp" />
-    <ClCompile Include="Source\src\m_titleScreen.cpp" />
+    <ClCompile Include="Source\src\gs_titlescreen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\src\Main.h" />
-    <ClInclude Include="Source\src\Player.h" />
+    <ClInclude Include="Source\src\gs_play.h" />
+    <ClInclude Include="Source\src\gs_startinground.h" />
+    <ClInclude Include="Source\src\gs_titlescreen.h" />
+    <ClInclude Include="Source\src\i_gamestate.h" />
+    <ClInclude Include="Source\src\i_timing.h" />
+    <ClInclude Include="Source\src\main.h" />
+    <ClInclude Include="Source\src\o_player.h" />
     <ClInclude Include="Source\src\resource.h" />
     <ClInclude Include="Source\src\template.h" />
   </ItemGroup>

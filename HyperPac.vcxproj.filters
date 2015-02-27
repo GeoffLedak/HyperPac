@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\src\Core.cpp">
+      <Filter>agk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\template.cpp">
+      <Filter>agk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\gs_play.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\o_player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\gs_startinground.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\gs_titlescreen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\src\i_timing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\src\resource.h">
+      <Filter>agk</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\template.h">
+      <Filter>agk</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\o_player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\gs_play.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\gs_titlescreen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\i_timing.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\i_gamestate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\src\gs_startinground.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f44c3729-bc50-49ee-bd9c-90f680be1a86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agk">
+      <UniqueIdentifier>{fb08cf53-1bb9-40ef-815b-723f44546e18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

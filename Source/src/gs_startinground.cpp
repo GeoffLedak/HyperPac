@@ -1,7 +1,9 @@
-#include "Main.h"
+#include "template.h"
+#include "gs_startinground.h"
 
 
-void Main::startingRound() {
+
+void GS_StartingRound() {
 
 	agk::Print("STARTING DA ROUND YO");
 
