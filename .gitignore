@@ -6,3 +6,4 @@ Release/HyperPac.pdb
 *.obj
 *.log
 *.tlog
+*.suo
